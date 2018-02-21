@@ -3,8 +3,18 @@
   <groupId>org.demo.maven</groupId>
   <artifactId>demo-Add-Divya</artifactId>
   <version>1.0</version>
-<packaging>jar</packaging>
-<distributionManagement>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+  </build>
+  -<distributionManagement>
 <repository>
 <id>releases</id>
 <!-- CHANGE HERE by your team nexus server -->
